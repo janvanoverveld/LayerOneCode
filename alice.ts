@@ -23,9 +23,9 @@ async function waitForMessage():Promise<any>{
    return promise;
 }
 
-async function sendMessage (host:string, port:number,msg:any):Promise<void> {
+async function sendMessage (host:string, port:number,msg:any) {
     let resolver: () => void;
-    const promise:Promise<void> = new Promise( resolve => resolver = resolve );
+    const promise = new Promise( resolve => resolver = resolve );
     const httpInfo = { url: `http://${host}:${port}`
                  , headers: httpHeaders
                     , body: msg
