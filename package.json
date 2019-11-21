@@ -1,0 +1,22 @@
+{
+  "name": "aliceenbob",
+  "version": "1.0.0",
+  "description": "alice en bob example",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && node js\\start.js",
+    "alice": "node js\\alice.js",
+    "bob": "node js\\bob.js"
+  },
+  "author": "jvo",
+  "license": "ISC",
+  "dependencies": {
+    "@types/request": "^2.48.1",
+    "http": "0.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.12.2",
+    "child_process": "^1.0.2"
+  }
+}
