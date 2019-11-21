@@ -40,7 +40,6 @@ async function startProtocol() {
    for(let i=0;i<5;i++) {
       sendMessage(hostBob, portBob, {name:"ADD", value1:21, value2:21});
       const res = await waitForMessage();
-      
       if (res && res.name === "RES" && res.sum)
          console.log(`Received ${res.sum}`);
    }
